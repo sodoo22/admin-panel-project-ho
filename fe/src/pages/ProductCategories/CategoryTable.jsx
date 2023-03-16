@@ -9,6 +9,7 @@ import { deleteCategory } from "../../services/CategoryServices";
 
 export default function CategoriesTable() {
   const [caterories, setCategories, URL] = useContext(CategoryContext);
+  console.log(caterories.data);
 
   useEffect(() => {
     fetchCategories();
